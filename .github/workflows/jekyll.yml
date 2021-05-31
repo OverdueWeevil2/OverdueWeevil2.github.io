@@ -1,0 +1,29 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Xterm.js yükle
+      run: |
+       sudo apt update
+       sudo apt install --install-recommends nodejs npm git
+       mkdir DEDEm
+       cd DEDEm
+       npm install xterm.js xterm-addon-attach xterm-addon-fit xterm-addon-search xterm-addon-web-links
+       git add -A
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"

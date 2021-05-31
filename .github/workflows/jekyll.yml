@@ -20,7 +20,7 @@ jobs:
        sudo apt install --install-recommends nodejs npm git
        mkdir DEDEm
        cd DEDEm
-       npm install xterm.js xterm-addon-attach xterm-addon-fit xterm-addon-search xterm-addon-web-links
+       npm install xterm xterm-addon-attach xterm-addon-fit xterm-addon-search xterm-addon-web-links
        git add -A
     - name: Build the site in the jekyll/builder container
       run: |

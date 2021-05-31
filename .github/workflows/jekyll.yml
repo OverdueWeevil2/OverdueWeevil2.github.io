@@ -16,12 +16,13 @@ jobs:
 
     - name: Xterm.js yükle
       run: |
-       sudo apt update
-       sudo apt install --install-recommends nodejs npm git
+       sudo apt-get update
+       sudo apt-get install --install-recommends nodejs npm git -y
        mkdir DEDEm
        cd DEDEm
        npm install xterm xterm-addon-attach xterm-addon-fit xterm-addon-search xterm-addon-web-links
        git add -A
+       git commit -m "xterm.js Yükle"
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \

@@ -17,9 +17,9 @@ jobs:
     - name: Xterm.js siteye yükle
       run: |
        sudo apt-get update
-       clear
+       cls
        sudo apt-get install --install-recommends nodejs npm git -y
-       clear
+       cls
        npm install xterm
        mv node_modules/ xterm_files/
        cd xterm_files/xterm

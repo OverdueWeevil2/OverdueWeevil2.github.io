@@ -18,7 +18,7 @@ jobs:
       run: |
        sudo apt-get update
        sudo apt-get install --install-recommends nodejs npm git -y
-       npm install xterm xterm-addon-attach xterm-addon-fit xterm-addon-search xterm-addon-web-links
+       npm install xterm
        mv node_modules/ xterm_files/
     - uses: matheusalbino/git-commit@v1.0.1
       with:

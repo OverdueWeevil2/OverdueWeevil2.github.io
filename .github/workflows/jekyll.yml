@@ -19,9 +19,11 @@ jobs:
        sudo apt-get update
        sudo apt-get install --install-recommends nodejs npm git -y
        npm install xterm
-       npm install
        mv node_modules/ xterm_files/
        cp -r xterm_files/xterm/* xterm/
+       cd xterm
+       npm install
+       npm start
     - name: Xterm.js dosyalarını siteye aktar
       uses: matheusalbino/git-commit@v1.0.1
       with:

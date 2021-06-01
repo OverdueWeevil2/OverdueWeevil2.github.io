@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Xterm.js yükle
+    - name: Xterm.js siteye yükle
       run: |
        sudo apt-get update
        sudo apt-get install --install-recommends nodejs npm git -y

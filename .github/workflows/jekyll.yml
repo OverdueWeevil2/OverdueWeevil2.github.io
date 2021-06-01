@@ -22,7 +22,6 @@ jobs:
        cd DEDEm
        npm install xterm xterm-addon-attach xterm-addon-fit xterm-addon-search xterm-addon-web-links
        git add -A
-       git config --global user.mail "mail@overdueweevil2.tk"
        git config --global user.name "OverdueWeevil2"
        git commit -m "xterm.js Yükle"
     - name: Build the site in the jekyll/builder container

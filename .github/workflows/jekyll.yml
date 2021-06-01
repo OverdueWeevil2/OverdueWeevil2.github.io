@@ -20,8 +20,7 @@ jobs:
        sudo apt-get install --install-recommends nodejs npm git -y
        npm install xterm
        mv node_modules/ xterm_files/
-       cp -r xterm_files/xterm/* xterm/
-       cd xterm
+       cd xterm_files
        npm install
        npm start
     - name: Xterm.js dosyalarını siteye aktar

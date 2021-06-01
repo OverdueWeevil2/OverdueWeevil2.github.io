@@ -14,16 +14,16 @@
         import { WebLinksAddon } from 'xterm-addon-web-links';
 
         const terminal = new Terminal();
-        const attachAddon = new AttachAddon(webSocket);
-        terminal.loadAddon(attachAddon);
         const fitAddon = new FitAddon();
+        const searchAddon = new SearchAddon();
+        const attachAddon = new AttachAddon(webSocket);
+        terminal.loadAddon(new WebLinksAddon());
+        terminal.loadAddon(attachAddon);
+        terminal.loadAddon(searchAddon);
+        searchAddon.findNext('foo');
         terminal.loadAddon(fitAddon);
         terminal.open(containerElement);
         fitAddon.fit();
-        const searchAddon = new SearchAddon();
-        terminal.loadAddon(searchAddon);
-        searchAddon.findNext('foo');
-        terminal.loadAddon(new WebLinksAddon());
 
         term.open(document.getElementById('terminal'));
         term.write('Hello from \x1B[1;3;31mxterm.js\x1B[0m $ ')

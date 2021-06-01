@@ -18,12 +18,11 @@ jobs:
       run: |
        sudo apt-get update
        sudo apt-get install --install-recommends nodejs npm git -y
-       mkdir DEDEm
-       cd DEDEm
        npm install xterm xterm-addon-attach xterm-addon-fit xterm-addon-search xterm-addon-web-links
-       git add -A
-       git config --global user.name "OverdueWeevil2"
-       git commit -m "xterm.js Yükle"
+    - uses: matheusalbino/git-commit@latest
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \

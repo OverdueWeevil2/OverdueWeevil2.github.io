@@ -17,12 +17,13 @@ jobs:
     - name: Xterm.js siteye yükle
       run: |
        sudo apt-get update
+       clear
        sudo apt-get install --install-recommends nodejs npm git -y
+       clear
        npm install xterm
        mv node_modules/ xterm_files/
-       cd xterm_files
+       cd xterm_files/xterm
        npm install
-       npm start
     - name: Xterm.js dosyalarını siteye aktar
       uses: matheusalbino/git-commit@v1.0.1
       with:
@@ -33,3 +34,4 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    - run: npm start

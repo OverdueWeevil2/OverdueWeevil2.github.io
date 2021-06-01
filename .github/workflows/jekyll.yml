@@ -17,9 +17,7 @@ jobs:
     - name: Xterm.js siteye yükle
       run: |
        sudo apt-get update
-       cls
        sudo apt-get install --install-recommends nodejs npm git -y
-       cls
        npm install xterm
        mv node_modules/ xterm_files/
        cd xterm_files/xterm
@@ -35,3 +33,6 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
     - run: npm start
+    - uses: matheusalbino/git-commit@v1.0.1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}

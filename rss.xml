@@ -4,24 +4,22 @@
         <item turbo="true">
             <link>https://overdueweevil2.ml</link>
             <turbo:content>
-                <![CDATA[
-                    <title>OverdueWeevil2</title>
-                    <link rel="shortcut icon" type="image/png" href="//github.com/OverdueWeevil2/OverdueWeevil2.github.io/blob/main/favicon.ico?raw=true">
-                    <link rel="stylesheet" href="/ubuntu-font.css">
-                    <h1 class="animate__animated animate__bounce"><a href="https://github.com/OverdueWeevil2/Wine-Installer">Wine Installer (English AND Turkish)</a></h1>
-                    <h1 class="animate__animated animate__flash"><a href="https://github.com/OverdueWeevil2/Xfce-packages">Xfce packages (Install Xfce Desktop Environment)</a></h1>
-                    <h1 class="animate__animated animate__pulse"><a href="/youtube?video=tiktok-videos">TikTok Videoları</a></h1>
-                    <h1 class="animate__animated animate__rubberBand"><a href="/clippy">Clippy</a></h1>
-                    <h1 class="animate__animated animate__shakeX"><a href="https://youtube.com/channel/UC9ZRhl9V_W1IeFkX0jqFaUw?sub_confirmation=1&view_as=subscriber">Ailemize katıl</a></h1>
-                    <h1 class="animate__animated animate__shakeY"><a href="javascript:void(0)" onclick="SERSERIM">Sakin ol ve tıkla</a></h1>
-                    <h1 class="animate__animated animate__headShake"><a href="/term.html">Xterm.js</a></h1>
-                    <script>var SCRI7 = "//OverdueWeevil2.github.io/button.js"</script>
-                    <script>var SCRI = "script"</script>
-                    <script>var SCRI0 = "head"</script>
-                    <script>var SERSERIM = "javascript:x=document.createElement(SCRI);x.src=SCRI7; void document.getElementsByTagName(SCRI0)[0].appendChild(x);"</script>
-                    <h1 class="animate__animated animate__swing">TikTok Videomuz:</h1>
-                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@overdueweevil2/video/6950240145815751938" data-video-id="6950240145815751938" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@overdueweevil2" href="https://www.tiktok.com/@overdueweevil2">@overdueweevil2</a> <p></p> <a target="_blank" title="♬ Arcade - Duncan Laurence ft. FLETCHER" href="https://www.tiktok.com/music/Arcade-6898747316191102977">♬ Arcade - Duncan Laurence ft. FLETCHER</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> 
-                ]]>
+                <title>OverdueWeevil2</title>
+<link rel="shortcut icon" type="image/png" href="//github.com/OverdueWeevil2/OverdueWeevil2.github.io/blob/main/favicon.ico?raw=true">
+<link rel="stylesheet" href="/ubuntu-font.css">
+<h1 class="animate__animated animate__bounce"><a href="https://github.com/OverdueWeevil2/Wine-Installer">Wine Installer (English AND Turkish)</a></h1>
+<h1 class="animate__animated animate__flash"><a href="https://github.com/OverdueWeevil2/Xfce-packages">Xfce packages (Install Xfce Desktop Environment)</a></h1>
+<h1 class="animate__animated animate__pulse"><a href="/youtube?video=tiktok-videos">TikTok Videoları</a></h1>
+<h1 class="animate__animated animate__rubberBand"><a href="/clippy">Clippy</a></h1>
+<h1 class="animate__animated animate__shakeX"><a href="https://youtube.com/channel/UC9ZRhl9V_W1IeFkX0jqFaUw?sub_confirmation=1&view_as=subscriber">Ailemize katıl</a></h1>
+<h1 class="animate__animated animate__shakeY"><a href="javascript:void(0)" onclick="SERSERIM">Sakin ol ve tıkla</a></h1>
+<h1 class="animate__animated animate__headShake"><a href="/term.html">Xterm.js</a></h1>
+<script>var SCRI7 = "//OverdueWeevil2.github.io/button.js"</script>
+<script>var SCRI = "script"</script>
+<script>var SCRI0 = "head"</script>
+<script>var SERSERIM = "javascript:x=document.createElement(SCRI);x.src=SCRI7; void document.getElementsByTagName(SCRI0)[0].appendChild(x);"</script>
+<h1 class="animate__animated animate__swing">TikTok Videomuz:</h1>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@overdueweevil2/video/6950240145815751938" data-video-id="6950240145815751938" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@overdueweevil2" href="https://www.tiktok.com/@overdueweevil2">@overdueweevil2</a> <p></p> <a target="_blank" title="♬ Arcade - Duncan Laurence ft. FLETCHER" href="https://www.tiktok.com/music/Arcade-6898747316191102977">♬ Arcade - Duncan Laurence ft. FLETCHER</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
             </turbo:content>
         </item>
     </channel>

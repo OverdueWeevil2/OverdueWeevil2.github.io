@@ -1,0 +1,71 @@
+<rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
+    <channel>
+        <title>Name of the RSS feed</title>
+        <link>http://www.example.com/</link>
+        <description>Short description of the RSS feed</description>
+        <turbo:analytics type="Yandex" id="123456"></turbo:analytics>
+        <turbo:adNetwork type="Yandex" id="block ID" turbo-ad-id="first_ad_place"></turbo:adNetwork>
+        <turbo:adNetwork type="AdFox" turbo-ad-id="second_ad_place">
+            <![CDATA[
+                <div id="container ID"></div>
+                <script>
+                    window.Ya.adfoxCode.create({
+                        ownerId: 123456,
+                        containerId: 'container ID',
+                        params: {
+                            pp: 'g',
+                            ps: 'cmic',
+                            p2: 'fqem'
+                        }
+                    });
+                </script>
+            ]]>
+        </turbo:adNetwork>
+        <yandex:related type="infinity">
+            <link url="http://www.example.com/other-page1.html">Link text</link>
+            <link url="http://www.example.com/other-page2.html">Link text</link>
+        </yandex:related>
+        <item turbo="true">
+            <turbo:extendedHtml>true</turbo:extendedHtml>
+            <link>http://www.example.com/page1.html</link>
+            <author>Ivan Ivanov</author>
+            <category>Technology</category>
+            <pubDate>Sun, 29 Sep 2002 19:59:01 +0300</pubDate>
+            <turbo:content>
+                <![CDATA[
+                    <header>
+                        <h1>The Healthy Breakfast restaurant
+                        <h2>Healthy and delicious</h2>
+                        <figure>
+                            <img src="https://avatars.mds.yandex.net/get-sbs-sd/403988/e6f459c3-8ada-44bf-a6c9-dbceb60f3757/orig">
+                        </figure>
+                        <menu>
+                            <a href="http://example.com/page1.html">Menu item 1</a>
+                            <a href="http://example.com/page2.html">Menu item 2</a>
+                        </menu>
+                    </header>
+                    <p>What's a good way to start the day? <del>With a Cup of invigorating coffee!</del> <ins>Delicious and healthy Breakfast!                    <p><b>Join</b> us for breakfast. Check out photos of our dishes <a href="#">on our website</a>.</p>
+                    <h2>Menu</h2>
+                    <figure>
+                        <img src="https://avatars.mds.yandex.net/get-sbs-sd/369181/49e3683c-ef58-4067-91f9-786222aa0e65/orig">
+                        <figcaption>Omelette with herbs</figcaption>
+                    </figure> 
+                    <p>Our menu always contains fresh, delicious and healthy options.</p>
+                    <p>Find out for yourself.</p>
+                    <button formaction="tel:+7(123)456-78-90" data-background-color="#5B97B0" data-color="white" data-primary="true">Reserve a table</button>
+                    <section id="contacts">
+                        <div data-block="widget-feedback" data-stick="false">
+                            <div data-block="chat" data-type="whatsapp" data-url="https://whatsapp.com"></div>
+                            <div data-block="chat" data-type="telegram" data-url="http://telegram.com/"></div>
+                            <div data-block="chat" data-type="vkontakte" data-url="https://vk.com/"></div>
+                            <div data-block="chat" data-type="facebook" data-url="https://facebook.com"></div>
+                            <div data-block="chat" data-type="viber" data-url="https://viber.com"></div>
+                        </div>
+                        <p>Our address: <a href="#">Nullam dolor massa, porta a nulla in, ultricies vehicula arcu.</a></p>
+                    <section>
+                    <p><small>Photos — http://unsplash.com</small></p>
+                ]]>
+            </turbo:content>
+        </item>
+    </channel>
+</rss>

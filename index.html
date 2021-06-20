@@ -12,6 +12,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <title>OverdueWeevil2</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="/ubuntu-font.css">
+<button id="hide">Butonları gizle</button>
+<button id="show">Butonları göster</button>
+<script>
+ 
+    $(document).ready(function(){
+       
+        $("#hide").click(function(){
+           $("h1").hide(); 
+        });
+        
+        $("#show").click(function(){
+           $("h1").show(); 
+        });
+        
+    });
+    
+</script>
 <h1 class="animate__animated animate__bounce"><a href="https://github.com/OverdueWeevil2/Wine-Installer">Wine Installer (English AND Turkish)</a></h1>
 <h1 class="animate__animated animate__flash"><a href="https://github.com/OverdueWeevil2/Xfce-packages">Xfce packages (Install Xfce Desktop Environment)</a></h1>
 <h1 class="animate__animated animate__pulse"><a href="/youtube?video=tiktok-videos">TikTok Videoları</a></h1>

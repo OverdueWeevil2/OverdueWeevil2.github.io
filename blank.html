@@ -9,3 +9,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56BHJCM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --></body>
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Jquery Örnekler</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <style>
+        .kutu {
+            width: 200px;
+            height: 200px;
+            float: left;
+            border: #000 solid 2px;
+            margin: 3px;
+        }
+    </style>
+
+    
+</head>
+ 
+<body>
+    <input type="color" id="renk">
+    <br>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    
+    <script>
+        $(document).ready(function() {
+            $(".kutu").click(function() {
+                var secilenrenk = $("#renk").val();
+                $(this).css("backgroundColor", secilenrenk);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<script>const queryString = window.location.search;
+
+const urlParams = new URLSearchParams(queryString);
+
+const videoIDID = urlParams.get('video')
+
+const videoLink = "https://youtu.be/" + videoIDID
+
+$('#videoIDIDID').val(videoIDID);
+</script>
+<script>function goURL() {
+  var URLhazir = $('#videoIDIDID').val();
+  location.href = "https://OverdueWeevil2.github.io/youtube?video=" + URLhazir
+  }</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <head><!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -10,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56BHJCM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) --></body>
-<title>TikTok Videoları</title>
+<title>YouTube Video Oynatıcı</title>
 <html>
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
@@ -31,7 +46,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         player = new YT.Player('player', {
           height: '390',
           width: '640',
-          videoId: 'dpLCOkoZmQw',
+          videoId: videoIDID,
           playerVars: {
             'playsinline': 1
           },
@@ -63,7 +78,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
   </body>
 </html>
-
+<h1>Video ID:</h1>
+<input type="text" id="videoIDIDID" />
+<button onClick="goURL()">Gönder</button>
 
 <h1 class="animate__animated animate__bounce"><a href="javascript:void(0)" onclick="player.playVideo()">Videoyu oynat</a></h1>
 
@@ -71,5 +88,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <h1 class="animate__animated animate__pulse"><a href="javascript:void(0)" onclick="player.stopVideo()">Videoyu durdur</a></h1>
 
-<h1><a href="//youtube.com/embed/dpLCOkoZmQw">YouTube'da izle</a></h1>
+<h1><a href=videoLink>YouTube'da izle</a></h1>
 <link rel="stylesheet" href="/ubuntu-font.css">

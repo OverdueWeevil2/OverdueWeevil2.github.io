@@ -5,14 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<audio src="connect.mp3" preload="auto" id="connect"></audio>
+<audio src="disconnect.mp3" preload="auto" id="disconnect"></audio>
 Sorry, the bluetooth device is ready to pair. Please try again later.<br>
 <button onclick="btnClick();" id="btn">Try Again</button>
 <script>
+var connect = document.getElementById('connect');
+var disconnect = document.getElementById('disconnect');
 var btn = document.getElementById('btn');
 function btnClick() {
-    try { new Audio('disconnect.mp3').play(); } catch (e) {}
+    try { disconnect.play(); } catch (e) {}
     btn.onclick = function() {
-        try { new Audio('connect.mp3').play(); } catch(e) {}
+        try { connect.play(); } catch(e) {}
         this.style.display = 'none';
     };
     btn.innerHTML = 'Don\'t Click this Button Again.';
